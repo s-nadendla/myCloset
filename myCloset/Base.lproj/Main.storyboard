@@ -30,11 +30,17 @@
                                         <rect key="frame" x="28" y="14" width="30" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="homeIcon"/>
+                                        <connections>
+                                            <segue destination="uOw-If-3xp" kind="show" id="6AW-SF-SUd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5m7-q5-5aX">
                                         <rect key="frame" x="95" y="18" width="35" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="heartIcon"/>
+                                        <connections>
+                                            <segue destination="vkR-55-nWG" kind="show" id="zvH-Rn-Xxg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9h-cW-ahv">
                                         <rect key="frame" x="153" y="3" width="68" height="64"/>
@@ -52,6 +58,9 @@
                                         <rect key="frame" x="322" y="20" width="28" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="profileIcon"/>
+                                        <connections>
+                                            <segue destination="khP-pP-RR8" kind="show" id="En1-oN-yqt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1529411765" green="0.4549019608" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -81,11 +90,17 @@
                                         <rect key="frame" x="28" y="14" width="30" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="homeIcon"/>
+                                        <connections>
+                                            <segue destination="uOw-If-3xp" kind="show" id="A7f-bf-Iuy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTz-RL-VkV">
                                         <rect key="frame" x="95" y="18" width="35" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="heartIcon"/>
+                                        <connections>
+                                            <segue destination="vkR-55-nWG" kind="show" id="hZ1-Ua-ii8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMY-fy-cq6">
                                         <rect key="frame" x="153" y="3" width="68" height="64"/>
@@ -98,6 +113,9 @@
                                         <rect key="frame" x="250" y="14" width="37" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="appointmentIcon"/>
+                                        <connections>
+                                            <segue destination="zoR-Dz-1c3" kind="show" id="xgN-PA-JWd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fae-Hh-L9P">
                                         <rect key="frame" x="322" y="20" width="28" height="28"/>
@@ -136,6 +154,9 @@
                                         <rect key="frame" x="28" y="14" width="30" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="homeIcon"/>
+                                        <connections>
+                                            <segue destination="uOw-If-3xp" kind="show" id="5qP-Xf-5RV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9B-pt-1T3">
                                         <rect key="frame" x="95" y="18" width="35" height="31"/>
@@ -153,11 +174,17 @@
                                         <rect key="frame" x="250" y="14" width="37" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="appointmentIcon"/>
+                                        <connections>
+                                            <segue destination="zoR-Dz-1c3" kind="show" id="jUy-AB-Fmb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1m7-fY-J2e">
                                         <rect key="frame" x="322" y="20" width="28" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="profileIcon"/>
+                                        <connections>
+                                            <segue destination="khP-pP-RR8" kind="show" id="8pQ-V9-Bfj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1529411765" green="0.4549019608" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -357,6 +384,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="DIT-XM-sj5" id="bxc-bw-gL7"/>
+                        <outlet property="searchBar" destination="xKp-5I-eOH" id="aal-bp-1og"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjO-Kk-ueA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -955,6 +983,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="oG2-i6-T4L"/>
-        <segue reference="IOm-zC-wf4"/>
+        <segue reference="A7f-bf-Iuy"/>
+        <segue reference="t1b-9S-An4"/>
+        <segue reference="SXE-yb-hEz"/>
+        <segue reference="b7E-Ey-17J"/>
     </inferredMetricsTieBreakers>
 </document>

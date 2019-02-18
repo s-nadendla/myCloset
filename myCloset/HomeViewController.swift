@@ -10,9 +10,11 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    let pictures = ["1", "2", "3", "4", "5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34"]
+    var pictures = ["1", "2", "3", "4", "5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34"]
     
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +28,28 @@ class HomeViewController: UIViewController {
         return true
     }
 }
-extension HomeViewController : UICollectionViewDataSource {
+
+
+extension HomeViewController: UISearchBarDelegate, UICollectionViewDataSource {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        // When there is no text, filteredData is the same as the original data
+        // When user has entered text into the search box
+        // Use the filter method to iterate over all items in the data array
+        // For each item, return true if the item should be included and false if the
+        // item should NOT be included
+        pictures = ["1"]
+        
+        
+        collectionView.reloadData()
+    }
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = false
+        searchBar.text = ""
+        searchBar.resignFirstResponder()
+    }
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        self.searchBar.showsCancelButton = true
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return pictures.count;
     }
@@ -39,7 +62,7 @@ extension HomeViewController : UICollectionViewDataSource {
         cell.contentView.layer.borderWidth = 1.0
         cell.contentView.layer.borderColor = UIColor.clear.cgColor
         cell.contentView.layer.masksToBounds = true
-  
+        
         cell.layer.shadowColor = UIColor.lightGray.cgColor
         cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
         cell.layer.shadowRadius = 2.0
@@ -49,16 +72,8 @@ extension HomeViewController : UICollectionViewDataSource {
         
         //cell.productButton.addTarget(self, action: "segue", for: .touchUpInside)
         cell.productButton.setBackgroundImage(image, for: .normal)
-
-
+        
+        
         return cell
     }
-    //func segue(sender: UIButton) {
-        // Perform segue and other stuff
-        //sender.title // This is the area code
-        //self.performSegue(withIdentifier: "moveToView", sender: self)
-//    }
-
-    
-    
 }
