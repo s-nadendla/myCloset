@@ -11,12 +11,12 @@ import UIKit
 class HomeViewController: UIViewController {
 
     let pictures = ["1", "2", "3", "4", "5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34"]
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        collectionView.dataSource = self
+        self.collectionView.dataSource = self
         // Do any additional setup after loading the view.
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -47,17 +47,17 @@ extension HomeViewController : UICollectionViewDataSource {
         cell.layer.masksToBounds = false
         cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
         
-        cell.productButton.addTarget(self, action: "segue", for: .touchUpInside)
+        //cell.productButton.addTarget(self, action: "segue", for: .touchUpInside)
         cell.productButton.setBackgroundImage(image, for: .normal)
 
 
         return cell
     }
-    func segue(sender: UIButton) {
+    //func segue(sender: UIButton) {
         // Perform segue and other stuff
-        sender.title // This is the area code
-        self.performSegue(withIdentifier: "moveToView", sender: self)
-    }
+        //sender.title // This is the area code
+        //self.performSegue(withIdentifier: "moveToView", sender: self)
+//    }
 
     
     
